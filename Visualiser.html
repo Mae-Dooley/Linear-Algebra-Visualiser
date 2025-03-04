@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <title>Visualiser App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+
+    <body>
+        
+
+        <div class="topBar">
+            <h4>Mae's Visualiser app</h4>
+            <ul>
+
+
+                <li>
+                    <!-- Rounded switch -->
+                    <label>Dark Mode</label>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeSwitch" onClick="darkModeToggleCheck()">
+                        <span class="toggle round"></span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottomBar">     
+            <label>Create Vector</label>
+            <label class="createVectorButton">
+                <input type="button" id="createVectorButton" onClick="createVectorButton()">
+            </label>
+            <label>Undo</label>           
+            <label class="undoButton">
+                <input type="button" id="undoButton" onClick="undoButton()">
+            </label>
+        </div>
+
+
+    </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="Sketch.js"></script>
+</html>

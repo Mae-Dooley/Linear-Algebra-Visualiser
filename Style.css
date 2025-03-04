@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+
+}
+
+h4 {
+    background-color: #ffffff00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    user-select: none;
+}
+
+.topBar {
+  background-color: #3e3e3e;
+  box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+  color: #fff;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  padding: 5px;
+}
+
+.topBar ul {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.topBar ul li {
+  padding: 0px 5px;
+}
+
+.topBar li :last-of-type {
+  margin-left: 0;
+}
+
+.bottomBar {
+  background-color: #3e3e3e;
+  box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px;
+}
+
+.bottomBar label {
+  padding: 10px;
+}
+
+
+
+
+
+/* Dark Mode Switch */
+/* The switch - the box around the slider */
+
+/* Code from w3School's tutorial on css switches: https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .toggle {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .toggle {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .toggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .toggle.round {
+    border-radius: 34px;
+  }
+  
+  .toggle.round:before {
+    border-radius: 50%;
+  }
